@@ -15,8 +15,28 @@ namespace MyProject.Controllers
             Models.Order order = orderService.GetOrderById("1");
             ViewBag.CustId = order.CustId;
             ViewBag.CustName = order.CustName;
-
             return View();
         }
+
+        public ActionResult Index2(string id)
+        {
+            ViewBag.id = id;
+            return View();
+        }
+
+        public ActionResult InsertOrder()
+        {
+            return View();
+        }
+
+        [HttpPost()]
+        public ActionResult InsertOrder(Models.Order order)
+        {
+            Models.OrderService orderService = new Models.OrderService();
+            orderService.InsertOrder(order);
+            return View("Index");
+        }
+
+
     }
 }
