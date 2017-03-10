@@ -15,6 +15,7 @@ namespace MyProject.Controllers
             Models.Order order = orderService.GetOrderById("1");
             ViewBag.CustId = order.CustId;
             ViewBag.CustName = order.CustName;
+
             return View();
         }
     }
