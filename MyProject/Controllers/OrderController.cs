@@ -19,7 +19,7 @@ namespace MyProject.Controllers
           /*  ViewBag.Desc1 = "Hello ViewBag";
             ViewData["Desc2"] = "Hello ViewData";
             TempData["Desc3"] = "Hello TempData";*/
-             
+               
             return View();
         }
 
