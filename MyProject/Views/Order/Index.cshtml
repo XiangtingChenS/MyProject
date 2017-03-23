@@ -12,12 +12,24 @@
 </head>
 <body>
     <div> 
-        @ViewBag.Desc1
-        <br>
-        @ViewData["Desc2"] 
-        <br>
-        @TempData["Desc3"] 
-        <br>
+    @*@ViewBag.Desc1
+     <br>
+    @ViewData["Desc2"]
+    <br>
+    @TempData["Desc3"]
+    <br>*@
+
+      @if(@ViewBag.test=="1")
+       {
+            <div>111</div>
+      }
+      else
+      {
+        <div>222</div>
+      }
     </div>
 </body>
 </html>
+@*<script type="text/javascript">
+    alert("@ViewBag.test");
+</script>*@

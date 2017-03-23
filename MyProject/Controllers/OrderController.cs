@@ -16,10 +16,11 @@ namespace MyProject.Controllers
              ViewBag.CustId = order.CustId;
              ViewBag.CustName = order.CustName;*/
 
-          /*  ViewBag.Desc1 = "Hello ViewBag";
-            ViewData["Desc2"] = "Hello ViewData";
-            TempData["Desc3"] = "Hello TempData";*/
-               
+            /*  ViewBag.Desc1 = "Hello ViewBag";
+              ViewData["Desc2"] = "Hello ViewData";
+              TempData["Desc3"] = "Hello TempData";*/
+
+            ViewBag.test = "2";
             return View();
         }
 
