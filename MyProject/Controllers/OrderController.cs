@@ -20,7 +20,25 @@ namespace MyProject.Controllers
               ViewData["Desc2"] = "Hello ViewData";
               TempData["Desc3"] = "Hello TempData";*/
 
-            ViewBag.test = "2";
+            //ViewBag.test = "2";
+
+            /*  Models.OrderService orderService = new Models.OrderService();
+              ViewBag.Data = orderService.GetOrders();*/
+
+            List<SelectListItem> custData = new List<SelectListItem>();
+            custData.Add(new SelectListItem()
+            {
+                Text="叡揚資訊",
+                Value="1"
+            });
+
+            custData.Add(new SelectListItem()
+            {
+                Text = "網軟資訊",
+                Value="2"
+            });
+
+            ViewBag.custData = custData;
             return View();
         }
 
@@ -40,11 +58,12 @@ namespace MyProject.Controllers
         {
             //      Models.OrderService orderService = new Models.OrderService();
             //     orderService.InsertOrder(order);
-            ViewBag.Desc1 = "Hello ViewBag";
+           /* ViewBag.Desc1 = "Hello ViewBag";
             ViewData["Desc2"] = "Hello ViewData";
             TempData["Desc3"] = "Hello TempData";
-            return RedirectToAction("Index");
-            //  return View("Index");
+              return RedirectToAction("Index");*/
+            //   return View("Index");
+            return View();
         }
 
         [HttpGet()]
